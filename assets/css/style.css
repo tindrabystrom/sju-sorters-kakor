@@ -1,0 +1,41 @@
+/* =====================
+   Header styles
+   ===================== */
+.intro {
+    color:#c04554;
+}
+
+.intro-text {
+    color:#c04554;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+
+/* =====================
+   Global styles
+   ===================== */
+* {
+   box-sizing: border-box;
+}
+
+/* =====================
+   Navigation styles
+   ===================== */
+.navigation {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 28px;
+   border-bottom: 1px solid #ccc;
+}
+
+.navigation-links {
+   display: flex;
+   gap: 20px;
+}
+   
+   
+   /* länk till olika färger: url(https://www.w3schools.com/cssref/css_colors.php) */
+   /* https://fontawesome.com/search?ic=free-collection */
