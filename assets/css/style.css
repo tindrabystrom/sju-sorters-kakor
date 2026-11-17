@@ -16,37 +16,9 @@ body {
 /* =====================
    Header styles
    ===================== */
-header {
-   max-width: 1000px;
-   margin: 0 auto;
-   padding: 20px;
-}
 
-/* Bildens behållare */
-header figure {
-   margin: 0;
-}
 
-/* Huvudrubrikens utseende */
-.intro {
-   text-align:center;
-   font-size: 42px;
-   margin: 0 0 20px;
-}
 
-/* behållare för intorduktionsbilden */
-.intro-bild {
-   display: block;
-   width: 100%;
-   height: auto
-}
-
-/* intorduktionstext */
-.intro-text {
-   font-size: 18px;
-   line-height: 1.6;
-   margin: 20px 0;
-}
 /* =====================
    Navigation styles
    ===================== */
