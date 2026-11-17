@@ -1,40 +1,64 @@
 /* =====================
-   Header styles
+   Grundläggande - Gör det enklare att hantera storlekar/beräkna elementens bredd.
    ===================== */
-.intro {
-    color:#c04554;
-}
-
-.intro-text {
-    color:#c04554;
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin-bottom: 20px;
-}
-
-
-/* =====================
-   Global styles
-   ===================== */
-* {
+*{
    box-sizing: border-box;
 }
 
+/* Grundläggande utseende för hela sida */
+body {
+   margin: 0;
+   background-color: #faf3e8;
+   color: #654632;
+   font-family: Georgia, serif;
+}
+
+/* =====================
+   Header styles
+   ===================== */
+header {
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+/* Bildens behållare */
+header figure {
+   margin: 0;
+}
+
+/* Huvudrubrikens utseende */
+.intro {
+   text-align:center;
+   font-size: 42px;
+   margin: 0 0 20px;
+}
+
+/* behållare för intorduktionsbilden */
+.intro-bild {
+   display: block;
+   width: 100%;
+   height: auto
+}
+
+/* intorduktionstext */
+.intro-text {
+   font-size: 18px;
+   line-height: 1.6;
+   margin: 20px 0;
+}
 /* =====================
    Navigation styles
    ===================== */
-.navigation {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 28px;
-   border-bottom: 1px solid #ccc;
-}
 
-.navigation-links {
-   display: flex;
-   gap: 20px;
-}
+/* =====================
+   Main styles
+   ===================== */
+
+/* =====================
+   Footer styles
+   ===================== */
+
    
    
    /* länk till olika färger: url(https://www.w3schools.com/cssref/css_colors.php) */
