@@ -106,7 +106,7 @@ body {
 .navigation-links {
    display: flex;
    justify-content: center;
-   gap: 40px;
+   gap: 20px;
    list-style: none;
    padding: 0;
 }
@@ -130,7 +130,14 @@ body {
 /* =====================
    Main styles
    ===================== */
-
+/* skapar en ruta runt varje recept */
+.recept article {
+   background-color: #fffdf8;
+   border-radius: 5px;
+   padding: 20px;
+   width: 80%;
+   margin: 10px auto;
+}
 /* =====================
    Footer styles
    ===================== */
