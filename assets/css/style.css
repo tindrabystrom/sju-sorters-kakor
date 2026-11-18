@@ -25,6 +25,8 @@ body {
    align-items: center;
    background-color: #654632;
    padding: 10px 20px;
+   position: sticky;
+   top: 0;
 }
 
 /* Sidans huvudrubrik */
@@ -56,6 +58,11 @@ body {
    Navigation styles
    ===================== */
 
+   /* Gör att Välj en kaka inte hamnar bakom sidhuvudet */
+   #toppen {
+      padding-top: 60px;
+   }
+   
 /* =====================
    Main styles
    ===================== */

@@ -17,9 +17,8 @@
   <!-- <body> omfattar webbsidans synliga innehåll.-->
   <body>
     <!-- <header> samlar sidans inledande innehåll med huvudrubrik, introduktionsbild och introduktion till traditionen sju sorters kakor.-->
-    <header id="hem">
-      <div class="sidhuvud">
-        <h1 class="intro">Sju sorters kakor</h1>
+    <header class="sidhuvud" id="hem">
+        <h1>Sju sorters kakor</h1>
         <nav class="huvudmeny" aria-label="Huvudmeny">
           <ul>
             <li><a href="#hem">Hem</a></li>
@@ -27,8 +26,9 @@
             <li><a href="#om-oss">Om oss</a></li>
           </ul>
         </nav>
-      </div>
-
+    </header>
+    
+    <section class="introduktion">
       <!-- <figure> används för bilderna. Alla bilder har alt-text för tillgänglighet och mått för att reservera plats. -->
       <figure>
         <img src="assets/images/ingredienser.jpg" alt="Bakingredienser med mjöl, smör och ägg bredvid en kavel" width="700" height="525">
@@ -37,10 +37,11 @@
       <!-- Introduktionen är uppdelad i två textstycken som presenterar traditionen och sidans innehåll. -->
       <p>Att bjuda på sju sorters kakor är en klassisk svensk fikatradition och syftar på det minsta antalet kaksorter som etiketten tidigare föreskrev att kakfatet ska innehålla. Tanken är att erbjuda ett varierat urval av småkakor så att det finns något för olika smaker: spröda, mjuka, chokladiga, kryddiga och fruktiga kakor. Utöver småkakorna serveras även vetebröd och tårta. Traditionen förknippas ofta med kafferep och högtider men passar lika bra till vardagsfika eller kalas och har funnits sedan 1800-talet.</p>
       <p>På den här sidan finns recept på sju småkakor att prova på!</p>
-    </header>
 
+    </section>
+      
     <!-- Huvudnavigation med lista av länkar till recepten. id="toppen" gör det möjligt att länka tillbaka till menyn. -->
-    <nav id="toppen">
+    <nav class="receptmeny" id="toppen">
       <!-- <h2> används för navigationens rubrik. -->
      <h2>Välj en kaka</h2>
      <ul class="navigation-links">
@@ -316,7 +317,7 @@
     </main>
 
     <!-- Sidfoten avslutar webbsidan och innehåller information om vem som har skapat sidan. -->
-    <footer>
+    <footer id="om-oss">
       <p>Sju sorters kakor - en webbsida skapad av Tindra Byström, 2026.</p>
     </footer>
 
