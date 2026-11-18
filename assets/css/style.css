@@ -17,7 +17,7 @@ body {
 
 
 /* =====================
-   Header styles
+   Sidhuvudet
    ===================== */
 .sidhuvud {
    display: flex;
@@ -27,6 +27,7 @@ body {
    padding: 10px 20px;
    position: sticky;
    top: 0;
+   z-index: 10;
 }
 
 /* Sidans huvudrubrik */
@@ -36,6 +37,9 @@ body {
    font-size: 28px;
 }
 
+/* =====================
+   Huvudmenyn
+   ===================== */
 /* Menylänkarna på samma rad */
 .huvudmeny ul {
    display: flex;
@@ -52,17 +56,77 @@ body {
 
 .huvudmeny a:hover {
    color:#e2c9ad;
-   text-decoration: underline;
+   text-decoration: none;
 }
+
+/* =====================
+   Introduktion
+   ===================== */
+
+/* Tar bort standardmarginalen runt intorduktionsbilden. */
+.introduktion figure {
+   margin: 0;
+}
+
+.introduktion img {
+   display: block;
+   width: 100%;
+   height: 60vh;
+   object-fit: cover;
+
+}
+
+.introduktion {
+   position: relative;
+}
+
+.introduktionstext {
+   position: absolute;
+   top: 50%;
+   left: 5%;
+   width: 45%;
+   padding: 20px;
+   background-color: rgba(255, 255, 255, 0.8);
+}
+
 /* =====================
    Navigation styles
    ===================== */
 
    /* Gör att Välj en kaka inte hamnar bakom sidhuvudet */
-   #toppen {
-      padding-top: 60px;
-   }
-   
+#toppen {
+   scroll-margin-top: 60px;
+}
+
+.receptmeny {
+   text-align:center;
+   padding: 20px;
+}
+
+.navigation-links {
+   display: flex;
+   justify-content: center;
+   gap: 40px;
+   list-style: none;
+   padding: 0;
+}
+
+/* Gör länkarna till knappar */
+.navigation-links a {
+   display: inline-block;
+   padding: 8px 12px;
+   background-color: #654632;
+   color: #fffdf8;
+   text-decoration: none;
+   border-radius: 5px;
+}
+
+/* Ändrar färg när muspekaren är över en kaklänk */
+.navigation-links a:hover {
+   background-color: #e2c9ad;
+   color: #654632;
+}
+
 /* =====================
    Main styles
    ===================== */
@@ -72,6 +136,3 @@ body {
    ===================== */
 
    
-   
-   /* länk till olika färger: url(https://www.w3schools.com/cssref/css_colors.php) */
-   /* https://fontawesome.com/search?ic=free-collection */
