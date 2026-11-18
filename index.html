@@ -16,9 +16,19 @@
    
   <!-- <body> omfattar webbsidans synliga innehåll.-->
   <body>
-     <!-- <header> samlar sidans inledande innehåll med huvudrubrik, introduktionsbild och introduktion till traditionen sju sorters kakor.-->
-    <header>
-      <h1>Sju sorters kakor</h1>
+    <!-- <header> samlar sidans inledande innehåll med huvudrubrik, introduktionsbild och introduktion till traditionen sju sorters kakor.-->
+    <header id="hem">
+      <div class="sidhuvud">
+        <h1 class="intro">Sju sorters kakor</h1>
+        <nav class="huvudmeny" aria-label="Huvudmeny">
+          <ul>
+            <li><a href="#hem">Hem</a></li>
+            <li><a href="#toppen">Recept</a></li>
+            <li><a href="#om-oss">Om oss</a></li>
+          </ul>
+        </nav>
+      </div>
+
       <!-- <figure> används för bilderna. Alla bilder har alt-text för tillgänglighet och mått för att reservera plats. -->
       <figure>
         <img src="assets/images/ingredienser.jpg" alt="Bakingredienser med mjöl, smör och ägg bredvid en kavel" width="700" height="525">
