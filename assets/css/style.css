@@ -1,13 +1,11 @@
 /* =====================
-   Grundläggande - 
-   Gör det enklare att hantera storlekar/beräkna elementens bredd.
-   Använder unersvella selektor för att definera box-sizing för alla element.
+   GRUNDLÄGGANDE
+   Räknar in padding och border i elementens bredd och höjd.
+   body - tar bort standardmarginalen och anger typsnitt och bakgrundsfärg.
    ===================== */
 * {
   box-sizing: border-box;
 }
-
-/* Grundläggande utseende för hela sida */
 body {
   margin: 0;
   font-family: Georgia, serif;
@@ -16,32 +14,32 @@ body {
 
 /* =====================
    SIDHUVUD
-   sammanfattning här
-   Engelska klassker
+   Flex placerar rubriken och menyn på samma rad med mellanrum.
+   Sidhuvudet ligger kvar högst upp vid skrollning.
    ===================== */
-.sidhuvud {
+.site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #654632;
-  padding: 10px 20px;
+  padding: 20px;
   position: sticky;
   top: 0;
   z-index: 10;
 }
-
-/* Sidans huvudrubrik */
-.sidhuvud h1 {
+.site-header h1 {
   color: #fffdf8;
   margin: 0;
   font-size: 28px;
 }
 
 /* =====================
-   Huvudmenyn
+   SIDHUVUDSMENY
+   Placerar länkarna på samma rad och tar bort listans standardutseende.
+   Anger länkarnas färg och storlek samt ändrar färg vid hover.
    ===================== */
 /* Menylänkarna på samma rad */
-.huvudmeny ul {
+.header-nav ul {
   display: flex;
   gap: 30px;
   list-style: none;
@@ -49,13 +47,14 @@ body {
   padding: 0;
 }
 
-.huvudmeny a {
+.header-nav a {
   color: #fffdf8;
   text-decoration: none;
+  font-size: 18px;
 }
 
 /* Ändrar färg när muspekaren är över en länk */
-.huvudmeny a:hover {
+.header-nav a:hover {
   color: #e2c9ad;
 }
 
@@ -64,22 +63,22 @@ body {
    ===================== */
 
 /* Tar bort standardmarginalen runt intorduktionsbilden. */
-.introduktion figure {
+.introduction figure {
   margin: 0;
 }
 
-.introduktion img {
+.introduction img {
   display: block;
   width: 100%;
   height: 60vh;
   object-fit: cover;
 }
 
-.introduktion {
+.introduction {
   position: relative;
 }
 
-.introduktionstext {
+.introduction-text {
   position: absolute;
   top: 50%;
   left: 5%;
@@ -97,7 +96,7 @@ body {
   scroll-margin-top: 60px;
 }
 
-.receptmeny {
+.recipe-nav {
   text-align: center;
   padding: 20px;
 }
@@ -130,7 +129,7 @@ body {
    Main styles
    ===================== */
 /* skapar en ruta runt varje recept */
-.recept article {
+.recipes article {
   background-color: #fffdf8;
   border-radius: 5px;
   padding: 20px;

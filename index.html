@@ -17,9 +17,9 @@
   <!-- <body> omfattar webbsidans synliga innehåll.-->
   <body>
     <!-- <header> samlar sidans inledande innehåll med huvudrubrik, introduktionsbild och introduktion till traditionen sju sorters kakor.-->
-    <header class="sidhuvud" id="hem">
+    <header class="site-header" id="hem">
       <h1>Sju sorters kakor</h1>
-      <nav class="huvudmeny">
+      <nav class="header-nav">
         <ul>
           <li><a href="#hem">Hem</a></li>
           <li><a href="#toppen">Recept</a></li>
@@ -28,19 +28,14 @@
       </nav>
     </header>
 
-    <section class="introduktion">
+    <section class="introduction">
       <!-- <figure> används för bilderna. Alla bilder har alt-text för tillgänglighet och mått för att reservera plats. -->
       <figure>
-        <img
-          src="assets/images/ingredienser.jpg"
-          alt="Bakingredienser med mjöl, smör och ägg bredvid en kavel"
-          width="700"
-          height="525"
-        />
+        <img src="assets/images/ingredienser.jpg" alt="Bakingredienser med mjöl, smör och ägg bredvid en kavel" width="700"height="525"/>
       </figure>
 
       <!-- Introduktionen är uppdelad i två textstycken som presenterar traditionen och sidans innehåll. -->
-      <div class="introduktionstext">
+      <div class="introduction-text">
         <p>
           Att bjuda på sju sorters kakor är en klassisk svensk fikatradition och
           syftar på det minsta antalet kaksorter som etiketten tidigare
@@ -56,7 +51,7 @@
     </section>
 
     <!-- Huvudnavigation med lista av länkar till recepten. id="toppen" gör det möjligt att länka tillbaka till menyn. -->
-    <nav class="receptmeny" id="toppen">
+    <nav class="recipe-nav" id="toppen">
       <!-- <h2> används för navigationens rubrik. -->
       <h2>Välj en kaka</h2>
       <ul class="navigation-links">
@@ -71,7 +66,7 @@
     </nav>
 
     <!-- <main> innehåller webbsidans huvudsakliga innehåll, som består av kakrecepten. Varje recept ligger i en egen article eftersom det är ett självständigt innehåll. -->
-    <main class="recept">
+    <main class="recipes">
       <!-- Här kommer första receptet brysselkex. id-attributet kopplar receptet till länken i huvudnavigationen. -->
       <!-- Receptet är hämtat från ICA. Beskrivningen av kakan är omformulerad med egna ord: https://www.ica.se/recept/brysselkex-433625/ -->
       <article id="brysselkex">
