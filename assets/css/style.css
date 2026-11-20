@@ -150,8 +150,22 @@ body {
 }
 
 /* =====================
-   BRYSSELKEX
+   RECEPTLAYOUT
    ===================== */
+
+/* Placerar receptets text och bild bredvid varandra */
+.recipes-top {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.recipes-top figure {
+  margin: 0;
+}
+
+
+
 
 
 /* =====================
