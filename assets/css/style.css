@@ -1,6 +1,7 @@
 /* =====================
    Grundläggande - Gör det enklare att hantera storlekar/beräkna elementens bredd.
    ===================== */
+/* Använder unersvella selektor för att definera box-sizing för alla element. */
 *{
    box-sizing: border-box;
 }
@@ -54,9 +55,9 @@ body {
    text-decoration: none;
 }
 
+/* Ändrar färg när muspekaren är över en länk */
 .huvudmeny a:hover {
    color:#e2c9ad;
-   text-decoration: none;
 }
 
 /* =====================
