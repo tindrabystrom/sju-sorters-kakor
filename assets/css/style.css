@@ -168,6 +168,7 @@ body {
 .recipes-bottom {
   display: flex;
   gap: 20px;
+  border-top: 1px solid #e5d8cc;
 }
 
 .recipes-ingredients {
@@ -193,8 +194,32 @@ body {
   line-height: 1.7;
 }
 
+/* Centrerar länken tillbaka till receptmenyn */
+.back-link {
+  text-align: center;
+}
 
+.back-link a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #654632;
+  color: #fffdf8;
+  border-radius: 10px;
+  text-decoration: none;
+}
 
+.back-link a:hover {
+  background-color: #e2c9ad;
+  color: #654632;
+}
+
+/* Stilsätter antalet kakor */
+.recipe-amount {
+  display: inline-block;
+  background-color: #f4e6d8;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
 
 
 /* =====================
