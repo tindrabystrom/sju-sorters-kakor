@@ -41,7 +41,7 @@ body {
 /* Menylänkarna på samma rad */
 .header-nav ul {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -57,11 +57,9 @@ body {
 .header-nav a:hover {
   color: #e2c9ad;
 }
-
 /* =====================
    Introduktion
    ===================== */
-
 .introduction figure {
   margin: 0;
 }
@@ -80,22 +78,24 @@ body {
 
 .introduction-text {
   position: absolute; 
-  top: 20%;
+  top: 50%;
   left: 5%;
+  transform: translateY(-50%);
   width: 50%;
-  padding: 5%;
+  padding: 10px;
   border-radius: 10px;
-  background-color: #f4e6d8;
+  background-color: rgba(244, 230, 216, 0.9);
 }
 
 .introduction-text h2 {
-  font-size: 28px;
+  font-size: 25px;
   color: #654632;
   border-bottom: 1px solid #654632;
   padding-bottom: 15px;
 }
 
 .introduction-text p {
+  font-size: 19px;
   color: #493225;
   margin-top: 0;
 }
@@ -228,7 +228,12 @@ body {
 /* =====================
    Footer styles
    ===================== */
-
+footer {
+  background-color: #654632;
+  color: #fffdf8;
+  padding: 30px;
+  text-align: center;
+}
 .social {
   display: flex;
   justify-content: right;
