@@ -81,8 +81,8 @@ body {
   top: 50%;
   left: 5%;
   transform: translateY(-50%);
-  width: 50%;
-  padding: 10px;
+  width: 45%;
+  padding: 20px;
   border-radius: 10px;
   background-color: rgba(244, 230, 216, 0.9);
 }
