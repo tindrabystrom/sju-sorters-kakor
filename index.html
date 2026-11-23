@@ -76,35 +76,38 @@
           </figure>
         </div>
 
-        <div>
+        <div class="recipes-bottom">
           <!-- <h3> används för underrubriker inom receptet. Ingredienserna visas i en oordnad lista eftersom ordningen inte har betydelse.-->
-          <h3>Ingredienser</h3>
-          <ul>
-            <li>200 g smör</li>
-            <li>1 dl socker</li>
-            <li>1 tsk vaniljsocker</li>
-            <li>4 dl vetemjöl</li>
-            <li>1 msk vatten</li>
-          </ul>
+          <div class="recipes-ingredients">
+             <h3>Ingredienser</h3>
+             <ul>
+               <li>200 g smör</li>
+               <li>1 dl socker</li>
+               <li>1 tsk vaniljsocker</li>
+               <li>4 dl vetemjöl</li>
+               <li>1 msk vatten</li>
+             </ul>
 
-          <!-- Garnering håller samma struktur som ingredienser, men hålls separat för att tydliggöra vad som används till kakornas garnering.-->
-          <h3>Garnering</h3>
-          <ul>
-            <li>strösocker</li>
-            <li>röd hushållsfärg (några droppar)</li>
-          </ul>
-
-          <!-- Samma struktur som tidigare men <ol> används eftersom instruktionerna ska följa en bestämd ordning. Varje <li> innehåller ett steg i receptet. -->
-          <h3>Gör så här</h3>
-          <ol>
-            <li>Sätt ugnen på 175°C</li>
-            <li>Hacka samman ingredienserna till degen. Forma degen till rullar, drygt 4 cm i diameter. Häll ut strösocker på ett smörpapper, häll på några droppar röd hushållsfärg och arbeta in med en sked. Rulla rullarna i sockret.</li>
-            <liL>ägg rullarna kallt i 30 minuter. Skär dem i skivor och lägg kakorna på bakplåtspappersklädd plåt.</li>
-            <li>Grädda mitt i ugnen ca 10 minuter, låt kakorna svalna på plåten.</li>
-          </ol>
+             <!-- Garnering håller samma struktur som ingredienser, men hålls separat för att tydliggöra vad som används till kakornas garnering.-->
+             <h3>Garnering</h3>
+             <ul>
+               <li>strösocker</li>
+               <li>röd hushållsfärg (några droppar)</li>
+             </ul>
+          </div>
+          <div class="recipes-instructions">
+             <!-- Samma struktur som tidigare men <ol> används eftersom instruktionerna ska följa en bestämd ordning. Varje <li> innehåller ett steg i receptet. -->
+             <h3>Gör så här</h3>
+             <ol>
+               <li>Sätt ugnen på 175°C</li>
+               <li>Hacka samman ingredienserna till degen. Forma degen till rullar, drygt 4 cm i diameter. Häll ut strösocker på ett smörpapper, häll på några droppar röd hushållsfärg och arbeta in med en sked. Rulla rullarna i sockret.</li>
+               <li>Lägg rullarna kallt i 30 minuter. Skär dem i skivor och lägg kakorna på bakplåtspappersklädd plåt.</li>
+               <li>Grädda mitt i ugnen ca 10 minuter, låt kakorna svalna på plåten.</li>
+             </ol>
+          </div>
+        </div>
           <!-- Länk leder tillbaka till receptmenyn via id="toppen". -->
           <p><a href="#toppen">Välj en annan kaka</a></p>
-        </div>
       </article>
 
       <!-- Resterande recept följer samma grundstruktur som det första receptet. Vissa recept innehåller även extra delar, till exempel garnering, bildtext eller annan information som är specifik för receptet. -->

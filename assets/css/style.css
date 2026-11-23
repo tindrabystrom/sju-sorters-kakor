@@ -73,16 +73,17 @@ body {
   object-fit: cover;
 }
 
+
 .introduction {
   position: relative;
 }
 
 .introduction-text {
-  position: absolute;
+  position: absolute; 
   top: 20%;
   left: 5%;
   width: 50%;
-  padding: 30px;
+  padding: 5%;
   border-radius: 10px;
   background-color: #f4e6d8;
 }
@@ -156,12 +157,40 @@ body {
 /* Placerar receptets text och bild bredvid varandra */
 .recipes-top {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   align-items: flex-start;
 }
 
 .recipes-top figure {
   margin: 0;
+}
+
+.recipes-bottom {
+  display: flex;
+  gap: 20px;
+}
+
+.recipes-ingredients {
+  flex: 2;
+}
+
+.recipes-instructions {
+  flex: 3;
+}
+
+.recipes h2 {
+  font-size: 28px;
+  color: #493225;
+}
+
+.recipes h3 {
+  font-size: 22px;
+  color: #493225;
+}
+
+.recipes-info p, .recipes li {
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 
