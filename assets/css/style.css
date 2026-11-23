@@ -147,6 +147,7 @@ body {
   border-radius: 10px;
   padding: 20px;
   width: 80%;
+  max-width: 1000px;
   margin: 10px auto;
 }
 
@@ -197,6 +198,8 @@ body {
 /* Centrerar länken tillbaka till receptmenyn */
 .back-link {
   text-align: center;
+  border-top: 1px solid #e5d8cc;
+  padding-top: 20px;
 }
 
 .back-link a {
