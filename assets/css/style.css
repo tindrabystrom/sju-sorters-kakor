@@ -8,8 +8,12 @@
 /* Tar bort standardmarginalen och anger webbsidans gemensamma typsnitt och bakgrundsfärg. */
 body {
   margin: 0;
-  font-family: Georgia, serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #f4e6d8;
+}
+/* Anger ett gemensamt typsnitt för webbsidans rubriker. */
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 /* =====================
@@ -67,6 +71,9 @@ body {
    Introduktion - Introduktionsbild med en överliggande textruta.
    ===================== */
 
+/* Begränsar introduktionens bredd och centrerar den på webbsidan.
+   Position relative gör introduktionen till referenspunkt
+   för placeringen av den överliggande textrutan. */
 .introduction {
   position: relative;
   width: 80%;
@@ -77,7 +84,9 @@ body {
 .introduction figure {
   margin: 0;
 }
-
+/* Visar bilden som ett blockelement och låter den fylla
+   introduktionens bredd med en fast höjd.
+   Object-fit beskär bilden vid behov utan att förvränga den. */
 .introduction img {
   display: block;
   width: 100%;
@@ -85,26 +94,31 @@ body {
   object-fit: cover;
   border-radius: 10px;
 } 
-
+/* Position absolute placerar textrutan ovanpå bilden.
+   Top och transform centrerar rutan vertikalt,
+   medan left anger avståndet från vänsterkanten.
+   Stilsätter rutan med en delvis transparent bakgrund. */
 .introduction-text {
   position: absolute; 
-  top: 10%;
-  left: 5%;
+  top: 50%;
+  left: 2%;
+  transform: translate(0, -50%);
   width: 55%;
   padding: 20px;
   border-radius: 10px;
   background-color: rgba(244, 230, 216, 0.9);
 }
-
+/* Anger rubrikens storlek, färg och avskiljande linje. */
 .introduction-text h2 {
   font-size: 1.5rem;
   color: #654632;
   border-bottom: 1px solid #654632;
   padding-bottom: 15px;
 }
-
+/* Anger brödtextens storlek, färg och radavstånd
+   samt tar bort den övre standardmarginalen. */
 .introduction-text p {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #493225;
   margin-top: 0;
   line-height: 1.5;
