@@ -16,18 +16,18 @@ body {
    SIDHUVUD
    ===================== */
 
-/* Flexbox placerar huvudrubriken till vänster och menyn till höger.
-   Innehållet centreras vertikalt. Brun bakgrund och padding
-   skapar färg och utrymme runt innehållet. */
+/* Flexbox placerar rubriken till vänster och menyn till höger.
+   Innehållet centreras vertikalt.
+   Anger brun bakgrund och inre avstånd. */
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #654632;
   padding: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 10; /* Placerar sidhuvudet ovanför övrigt innehåll. */
+  position: sticky; /* Håller sidhuvudet kvar vid skrollning. */
+  top: 0; /* Placerar sidhuvudet vid fönstrets överkant. */
+  z-index: 10; /* Visar sidhuvudet framför övrigt innehåll. */
 }
 
 /* Anger huvudrubrikens färg och storlek samt tar bort standardmarginalen. */
@@ -67,6 +67,12 @@ body {
    Introduktion - Introduktionsbild med en överliggande textruta.
    ===================== */
 
+.introduction {
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
 /* Tar bort figure-elementets standardmarginal. */
 .introduction figure {
   margin: 0;
@@ -75,21 +81,17 @@ body {
 .introduction img {
   display: block;
   width: 100%;
-  height: 50vh;
+  height: 600px;
   object-fit: cover;
-}
-
-
-.introduction {
-  position: relative;
-}
+  border-radius: 10px;
+} 
 
 .introduction-text {
   position: absolute; 
   top: 50%;
   left: 5%;
   transform: translateY(-50%);
-  width: 45%;
+  width: 55%;
   padding: 20px;
   border-radius: 10px;
   background-color: rgba(244, 230, 216, 0.9);
@@ -161,7 +163,7 @@ body {
   border-radius: 10px;
   padding: 20px;
   width: 80%;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 10px auto;
 }
 
