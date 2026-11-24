@@ -112,10 +112,11 @@ body {
 }
 
 /* =====================
-   Navigation styles
+   RECEPTMENY
    ===================== */
 
-/* Gör att Välj en kaka inte hamnar bakom sidhuvudet */
+/* Förhindrar att receptmenyn hamnar bakom sidhuvudet
+   när besökaren klickar på en ankarlänk. */
 #toppen {
   scroll-margin-top: 60px;
 }
