@@ -1,24 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sv">
   <!-- <!DOCTYPE html> anger att dokumentet är skrivet enligt HTML5. -->
-  <!-- <html> är rotelement som omfattar hela html-koden. Attributet lang="sv" anger att sidans huvudsakliga språk är svenska. -->
+  <!-- <html> är rotelement och attributet lang="sv" anger att sidans huvudsakliga språk är svenska. -->
 
   <!-- Dokumenthuvudet innehåller information om sidan. UTF-8 stöder svenska tecken och <title> anger texten i webbläsarens flik. -->
   <head>
     <meta charset="utf-8">
     <title>Sju sorters kakor</title>
-    <!-- Sju sortets kakor CSS. -->
+    <!-- Font-Awesome används för ikonerna. -->
     <link rel="stylesheet" href="assets/css/all.min.css">
-    <!-- Front-Awesome Core CSS. -->
+    <!-- Extern stilmall för webbsidans utseende och layout. -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Album css. -->
   </head>
 
   <!-- <body> omfattar webbsidans synliga innehåll.-->
   <body>
-    <!-- <header> samlar sidans inledande innehåll med huvudrubrik, introduktionsbild och introduktion till traditionen sju sorters kakor.-->
+    <!-- <header> innehåller huvudrubrik och navigationsmeny. Introduktionen har flyttats till en egen sektion.-->
     <header class="site-header" id="hem">
       <h1>Sju sorters kakor</h1>
+      <!-- Navigationsmeny med interna länkar till sidans olika delar.-->
       <nav class="header-nav">
         <ul>
           <li><a href="#hem">Hem</a></li>
@@ -28,13 +28,14 @@
       </nav>
     </header>
 
+    <!-- Introduktionen ligger i en egen <section> för separat stilsättning.-->
     <section class="introduction">
       <!-- <figure> används för bilderna. Alla bilder har alt-text för tillgänglighet och mått för att reservera plats. -->
       <figure>
         <img src="assets/images/ingredienser.jpg" alt="Bakingredienser med mjöl, smör och ägg bredvid en kavel" width="700" height="525">
       </figure>
 
-      <!-- Introduktionen är uppdelad i två textstycken som presenterar traditionen och sidans innehåll. -->
+      <!-- Rubrik och text grupperas i en <div> för placering ovanpå bilden med CSS. -->
       <div class="introduction-text">
         <h2> Välkommen till Sju sorters kakor</h2>
         <p>Att bjuda på sju sorters kakor är en klassisk svensk fikatradition och syftar på det minsta antalet kaksorter som etiketten tidigare föreskrev att kakfatet ska innehålla. Tanken är att erbjuda ett varierat urval av småkakor så att det finns något för olika smaker: spröda, mjuka, chokladiga, kryddiga och fruktiga kakor. Utöver småkakorna serveras även vetebröd och tårta. Traditionen förknippas ofta med kafferep och högtider men passar lika bra till vardagsfika eller kalas och har funnits sedan 1800-talet.</p>
@@ -42,7 +43,7 @@
       </div>
     </section>
 
-    <!-- Huvudnavigation med lista av länkar till recepten. id="toppen" gör det möjligt att länka tillbaka till menyn. -->
+    <!-- Receptmeny med interna länkar till kakrecepten. id="toppen" gör det möjligt att länka tillbaka till menyn. -->
     <nav class="recipe-nav" id="toppen">
       <!-- <h2> används för navigationens rubrik. -->
       <h2>Välj en kaka</h2>
@@ -57,16 +58,18 @@
       </ul>
     </nav>
 
-    <!-- <main> innehåller webbsidans huvudsakliga innehåll, som består av kakrecepten. Varje recept ligger i en egen article eftersom det är ett självständigt innehåll. -->
+    <!-- <main> innehåller webbsidans huvudsakliga innehåll. Varje kakrecept ligger i en egen article eftersom det är ett självständigt innehåll. -->
     <main class="recipes">
       <!-- Här kommer första receptet brysselkex. id-attributet kopplar receptet till länken i huvudnavigationen. -->
       <!-- Receptet är hämtat från ICA. Beskrivningen av kakan är omformulerad med egna ord: https://www.ica.se/recept/brysselkex-433625/ -->
       <article id="brysselkex">
+        <!-- Receptinformationen och bilden grupperas för placering bredvid varandra med CSS. -->
         <div class="recipes-top">
+          <!-- Samlar receptets rubrik, beskrivning och antal kakor. -->
           <div class="recipes-info">
             <h2>Brysselkex</h2>
-            <!-- <p> används för receptets beskrivande text. Ett stycke beskriver kakan och ett separat stycke anger hur många kakor receptet ger. -->
             <p>Brysselkex är klassiska småkakor med vaniljsmak och en dekorativ sockerkant. Kakorna formas som en rulle och skärs i skivor före gräddning.</p>
+            <!-- Klassen gör det möjligt att framhäva antalet kakor med CSS. -->
             <p class="recipe-amount">Antal: 40 kakor</p>
           </div>
           <!-- <figcaption> används för att ange att bilden är AI-genererad. -->
@@ -75,9 +78,9 @@
             <figcaption>AI-genererad bild</figcaption>
           </figure>
         </div>
-
+        <!-- Receptets nedre del delas upp i två kolumner med CSS. -->
         <div class="recipes-bottom">
-          <!-- <h3> används för underrubriker inom receptet. Ingredienserna visas i en oordnad lista eftersom ordningen inte har betydelse.-->
+          <!-- Ingredienser och garnering placeras i vänster kolumn. <h3> används för receptets underrubriker och <ul> eftersom ordningen inte har betydelse. -->
           <div class="recipes-ingredients">
              <h3>Ingredienser</h3>
              <ul>
@@ -88,15 +91,15 @@
                <li>1 msk vatten</li>
              </ul>
 
-             <!-- Garnering håller samma struktur som ingredienser, men hålls separat för att tydliggöra vad som används till kakornas garnering.-->
+             <!-- Garneringen har en egen underrubrik för tydlighet. -->
              <h3>Garnering</h3>
              <ul>
                <li>strösocker</li>
                <li>röd hushållsfärg (några droppar)</li>
              </ul>
           </div>
+          <!-- Instruktionerna placeras i höger kolumn med CSS. <ol> används eftersom stegen följer en bestämd ordning. -->
           <div class="recipes-instructions">
-             <!-- Samma struktur som tidigare men <ol> används eftersom instruktionerna ska följa en bestämd ordning. Varje <li> innehåller ett steg i receptet. -->
              <h3>Gör så här</h3>
              <ol>
                <li>Sätt ugnen på 175°C</li>
@@ -106,11 +109,11 @@
              </ol>
           </div>
         </div>
-          <!-- Länk leder tillbaka till receptmenyn via id="toppen". -->
+          <!-- Länken leder tillbaka till receptmenyn och stilsätts som en knapp. -->
           <p class="back-link"><a href="#toppen">Välj en annan kaka</a></p>
       </article>
 
-      <!-- Resterande recept följer samma grundstruktur som det första receptet. Vissa recept innehåller även extra delar, till exempel garnering, bildtext eller annan information som är specifik för receptet. -->
+      <!-- Resterande recept följer samma grundstruktur, med variationer i innehåll och layout.. -->
 
       <!-- Här börjar receptet chokladsnittar.-->
       <!-- Receptet är hämtat från ICA. Beskrivningen av kakan är omformulerad med egna ord: https://www.ica.se/recept/chokladsnittar-2131/ -->
