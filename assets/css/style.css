@@ -131,7 +131,7 @@ h1, h2, h3 {
 /* Förhindrar att receptmenyn hamnar bakom sidhuvudet
    när besökaren klickar på en ankarlänk. */
 #toppen {
-  scroll-margin-top: 60px;
+  scroll-margin-top: 80px;
 }
 /* Centrerar texten och anger inre avstånd. */
 .recipe-nav {
@@ -183,6 +183,7 @@ h1, h2, h3 {
   width: 80%;
   max-width: 1000px;
   margin: 10px auto;
+  scroll-margin-top: 80px;
 }
 
 
