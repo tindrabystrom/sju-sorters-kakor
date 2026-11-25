@@ -118,7 +118,7 @@ h1, h2, h3 {
 /* Anger brödtextens storlek, färg och radavstånd
    samt tar bort den övre standardmarginalen. */
 .introduction-text p {
-  font-size: 1rem;
+  font-size: 1.125rem;
   color: #493225;
   margin-top: 0;
   line-height: 1.5;
@@ -142,6 +142,7 @@ h1, h2, h3 {
 .recipe-nav h2 {
   font-size: 1.5rem;
   color: #493225;
+  margin-top: 0;
 }
 /* Flexbox placerar länkarna på samma rad och centrerar dem
    med 20 px mellanrum.
@@ -157,7 +158,7 @@ h1, h2, h3 {
 /* Gör länkarna till knappar */
 .navigation-links a {
   display: inline-block;
-  padding: 8px 12px;
+  padding: 10px 12px;
   background-color: #654632;
   color: #fffdf8;
   text-decoration: none;
@@ -275,14 +276,28 @@ h1, h2, h3 {
 /* =====================
    Footer styles
    ===================== */
-footer {
+
+/* Stilsätter sidfoten med brun bakgrund, ljus text
+   och centrerat innehåll.
+   Det AI-genererade bakgrundsmönstret läggs till genom
+   CSS och upprepas över sidfoten. */
+.site-footer {
   background-color: #654632;
+  background-image: url("../images/bakmonster.webp");
   color: #fffdf8;
   padding: 30px;
   text-align: center;
+  font-size: 1.125rem;
 }
-.social {
-  display: flex;
-  justify-content: right;
-  gap: 10px;
+/* Anger rubrikens storlek och tar bort den övre standardmarginalen. */
+.site-footer h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+/* Visar informationen om den AI-genererade bilden
+   med mindre, kursiv text och utan nedre marginal. */
+.image-credit {
+  font-size: 0.875rem;
+  font-style: italic;
+  margin-bottom: 0;
 }
