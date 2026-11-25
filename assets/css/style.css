@@ -5,7 +5,7 @@
 * {
   box-sizing: border-box;
 }
-/* Tar bort standardmarginalen och anger webbsidans gemensamma typsnitt och bakgrundsfärg. */
+/* Anger webbsidans gemensamma typsnitt och bakgrundsfärg samt tar bort standardmarginalen. */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -19,21 +19,17 @@ h1, h2, h3 {
 /* =====================
    SIDHUVUD
    ===================== */
-
-/* Flexbox placerar rubriken till vänster och menyn till höger.
-   Innehållet centreras vertikalt.
-   Anger brun bakgrund och inre avstånd. */
+/* Flexbox placerar rubriken till vänster och menyn till höger. Stilsätter sidhuvudet och håller det kvar vid skrollning. */
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #654632;
   padding: 20px;
-  position: sticky; /* Håller sidhuvudet kvar vid skrollning. */
-  top: 0; /* Placerar sidhuvudet vid fönstrets överkant. */
-  z-index: 10; /* Visar sidhuvudet framför övrigt innehåll. */
+  position: sticky; 
+  top: 0; 
+  z-index: 10; 
 }
-
 /* Anger huvudrubrikens färg och storlek samt tar bort standardmarginalen. */
 .site-header h1 {
   color: #fffdf8;
@@ -44,9 +40,7 @@ h1, h2, h3 {
 /* =====================
    SIDHUVUD NAVIGATIONSMENY
    ===================== */
-
-/* Flexbox placerar länkarna på samma rad med 20 px mellanrum.
-   Tar bort listpunkter, standardmarginal och padding. */
+/* Flexbox placerar länkarna på samma rad med mellanrum. Tar bort listpunkter, standardmarginal och padding. */
 .header-nav ul {
   display: flex;
   gap: 20px;
@@ -54,26 +48,22 @@ h1, h2, h3 {
   margin: 0;
   padding: 0;
 }
-
 /* Anger länkarnas färg och textstorlek samt tar bort understrykningen. */
 .header-nav a {
   color: #fffdf8;
   text-decoration: none;
   font-size: 1.125rem;
 }
-
-/* Ändrar färg när muspekaren är över dem. */
+/* Ändrar länkarnas färg vid hovering. */
 .header-nav a:hover {
   color: #e2c9ad;
 }
 
 /* =====================
-   Introduktion - Introduktionsbild med en överliggande textruta.
+   INTRODUKTION
    ===================== */
 
-/* Begränsar introduktionens bredd och centrerar den på webbsidan.
-   Position relative gör introduktionen till referenspunkt
-   för placeringen av den överliggande textrutan. */
+/* Begränsar introduktionens bredd och centrerar den. Position relative skapar en referenspunkt för textrutan. */
 .introduction {
   position: relative;
   width: 80%;
@@ -84,9 +74,7 @@ h1, h2, h3 {
 .introduction figure {
   margin: 0;
 }
-/* Visar bilden som ett blockelement och låter den fylla
-   introduktionens bredd med en fast höjd.
-   Object-fit beskär bilden vid behov utan att förvränga den. */
+/* Låter bilden fylla introduktionens bredd med en fast höjd och rundade hörn. Object-fit beskär bilden vid behov utan att förvränga den. */
 .introduction img {
   display: block;
   width: 100%;
@@ -94,10 +82,8 @@ h1, h2, h3 {
   object-fit: cover;
   border-radius: 10px;
 } 
-/* Position absolute placerar textrutan ovanpå bilden.
-   Top och transform centrerar rutan vertikalt,
-   medan left anger avståndet från vänsterkanten.
-   Stilsätter rutan med en delvis transparent bakgrund. */
+/* Placerar textrutan ovanpå bildens vänstra sida. Top och transform centrerar den vertikalt genom en förflyttning uppåt med halva rutans egen höjd.
+   Anger bredd, padding, rundade hörn och delvis transparent bakgrund. */
 .introduction-text {
   position: absolute; 
   top: 50%;
@@ -106,7 +92,7 @@ h1, h2, h3 {
   width: 55%;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(244, 230, 216, 0.9);
+  background-color: rgba(244, 230, 216, 0.8);
 }
 /* Anger rubrikens storlek, färg och avskiljande linje. */
 .introduction-text h2 {
@@ -115,8 +101,7 @@ h1, h2, h3 {
   border-bottom: 1px solid #654632;
   padding-bottom: 15px;
 }
-/* Anger brödtextens storlek, färg och radavstånd
-   samt tar bort den övre standardmarginalen. */
+/* Anger brödtextens storlek, färg, radavstånd och tar bort den övre standardmarginalen. */
 .introduction-text p {
   font-size: 1.125rem;
   color: #493225;
@@ -128,25 +113,22 @@ h1, h2, h3 {
    RECEPTMENY
    ===================== */
 
-/* Förhindrar att receptmenyn hamnar bakom sidhuvudet
-   när besökaren klickar på en ankarlänk. */
+/* Förhindrar att receptmenyn hamnar bakom sidhuvudet vid ankarlänk. */
 #toppen {
   scroll-margin-top: 80px;
 }
-/* Centrerar texten och anger inre avstånd. */
+/* Centrerar receptmenyns innehåll. */
 .recipe-nav {
   text-align: center;
   padding: 20px;
 }
-/* Anger receptmenyns rubrikstorlek och färg. */
+/* Stilsätter receptmenyns rubrik. */
 .recipe-nav h2 {
   font-size: 1.5rem;
   color: #493225;
   margin-top: 0;
 }
-/* Flexbox placerar länkarna på samma rad och centrerar dem
-   med 20 px mellanrum.
-   Tar bort listpunkter och listans standardindrag. */
+/* Flexbox placerar länkarna på en centrerad rad utan listpunkter. */
 .navigation-links {
   display: flex;
   justify-content: center;
@@ -154,8 +136,7 @@ h1, h2, h3 {
   list-style: none;
   padding: 0;
 }
-
-/* Gör länkarna till knappar */
+/* Stilsätter receptlänkarna som knappar */
 .navigation-links a {
   display: inline-block;
   padding: 10px 12px;
@@ -164,18 +145,17 @@ h1, h2, h3 {
   text-decoration: none;
   border-radius: 10px;
 }
-
-/* Ändrar färg när muspekaren är över en kaklänk */
+/* Ändrar knapparnas färger vid hovring. */
 .navigation-links a:hover {
   background-color: #e2c9ad;
   color: #654632;
 }
 
 /* =====================
-   Main styles
+   RECEPTKORT
    ===================== */
-/* Skapar ett centrerat receptkort med begränsad bredd,
-   ljus bakgrund, inre avstånd och rundade hörn. */
+/* Skapar centrerade receptkort med begränsad bredd, ljus bakgrund, tunn kantlinje och rundande hörn.
+   Scroll förhindrar att recepten döljs bakom sidhuvudet vid ankarlänkning. */
 .recipes article {
   background-color: #fffdf8;
   border: 1px solid #e5d8cc;
@@ -187,44 +167,42 @@ h1, h2, h3 {
   scroll-margin-top: 80px;
 }
 
-
 /* =====================
    RECEPTLAYOUT
    ===================== */
-
-/* Placerar receptets text och bild bredvid varandra */
+/* Placerar receptets text och bild bredvid varandra med mellanrum och gemensam överkant. */
 .recipes-top {
   display: flex;
   gap: 30px;
   align-items: flex-start;
   margin-bottom: 16px;
 }
-
+/* Tar bort standardmarginalen och skapar en referenspunkt för AI-texten. */
 .recipes-top figure {
   margin: 0;
   position: relative;
 }
+/* Placerar AI-texten i bildens nedre högra hörn med delvis transparent bakgrund. */
 .recipes figcaption {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background-color: rgba(244, 230, 216, 0.9);
+  background-color: rgba(244, 230, 216, 0.8);
   color: #493225;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 0.875rem;
 }
-
+/* Placerar ingredienser och instruktioner bredvid varandra med en avskiljande linje ovanför. */
 .recipes-bottom {
   display: flex;
   gap: 20px;
   border-top: 1px solid #e5d8cc;
 }
-
+/* Fördelar flexutrymmet mellan ingredienser och instruktioner i förhållandet 2:3. */
 .recipes-ingredients {
   flex: 2;
 }
-
 .recipes-instructions {
   flex: 3;
 }
@@ -280,7 +258,7 @@ h1, h2, h3 {
 
 
 /* =====================
-   Footer styles
+   SIDFOT
    ===================== */
 
 /* Stilsätter sidfoten med brun bakgrund, ljus text
