@@ -38,7 +38,7 @@ h1, h2, h3 {
 }
 
 /* =====================
-   SIDHUVUD NAVIGATIONSMENY
+   SIDHUVUDETS NAVIGATIONSMENY
    ===================== */
 /* Flexbox placerar länkarna på samma rad med mellanrum. Tar bort listpunkter, standardmarginal och padding. */
 .header-nav ul {
@@ -54,7 +54,7 @@ h1, h2, h3 {
   text-decoration: none;
   font-size: 1.125rem;
 }
-/* Ändrar länkarnas färg vid hovering. */
+/* Ändrar länkarnas färg vid hovring. */
 .header-nav a:hover {
   color: #e2c9ad;
 }
@@ -113,7 +113,7 @@ h1, h2, h3 {
    RECEPTMENY
    ===================== */
 
-/* Förhindrar att receptmenyn hamnar bakom sidhuvudet vid ankarlänk. */
+/* Förhindrar att receptmenyn hamnar bakom sidhuvudet vid ankarlänking. */
 #toppen {
   scroll-margin-top: 80px;
 }
@@ -154,8 +154,8 @@ h1, h2, h3 {
 /* =====================
    RECEPTKORT
    ===================== */
-/* Skapar centrerade receptkort med begränsad bredd, ljus bakgrund, tunn kantlinje och rundande hörn.
-   Scroll förhindrar att recepten döljs bakom sidhuvudet vid ankarlänkning. */
+/* Skapar centrerade receptkort med begränsad bredd, ljus bakgrund, tunn kantlinje och rundade hörn.
+   Scroll-margin-top förhindrar att recepten döljs bakom sidhuvudet vid ankarlänkning. */
 .recipes article {
   background-color: #fffdf8;
   border: 1px solid #e5d8cc;
@@ -177,12 +177,12 @@ h1, h2, h3 {
   align-items: flex-start;
   margin-bottom: 16px;
 }
-/* Tar bort standardmarginalen och skapar en referenspunkt för AI-texten. */
+/* Tar bort standardmarginalen och skapar en referenspunkt för bildtexten. */
 .recipes-top figure {
   margin: 0;
   position: relative;
 }
-/* Placerar AI-texten i bildens nedre högra hörn med delvis transparent bakgrund. */
+/* Placerar bildtexten i bildens nedre högra hörn med delvis transparent bakgrund. */
 .recipes figcaption {
   position: absolute;
   bottom: 10px;
@@ -199,41 +199,43 @@ h1, h2, h3 {
   gap: 20px;
   border-top: 1px solid #e5d8cc;
 }
-/* Fördelar flexutrymmet mellan ingredienser och instruktioner i förhållandet 2:3. */
+/* Fördelar flexutrymmet: 40% bredd för ingredienser och 60% för instruktioner. */
 .recipes-ingredients {
   flex: 2;
 }
 .recipes-instructions {
   flex: 3;
 }
-
+/* Anger receptrubrikernas storlek och färg */
 .recipes h2 {
   font-size: 1.75rem;
   color: #493225;
 }
-
 .recipes h3 {
   font-size: 1.375rem;
   color: #493225;
 }
-
+/* Skapar mellanrum mellan ikonerna och rubriktexten */
 .recipes h3 i {
   margin-right: 8px;
 }
-
+/* Anger gemensam textstorlek och radavstånd för receptens beskrivningar och listor. */
 .recipes-info p, .recipes li {
   font-size: 1.125rem;
   line-height: 1.7;
 }
 
-/* Centrerar länken tillbaka till receptmenyn */
+/* =====================
+   TILLBAKALÄNKEN
+   ===================== */
+/* Centrerar länken tillbaka till receptmenyn och avskiljer den med en linje. */
 .back-link {
   text-align: center;
   border-top: 1px solid #e5d8cc;
-  padding-top: 10px;
+  padding-top: 20px;
   margin-bottom: 0;
 }
-
+/* Stilsätter länken som en knapp i samma stil som receptmenyn. */
 .back-link a {
   display: inline-block;
   padding: 10px 15px;
@@ -242,12 +244,14 @@ h1, h2, h3 {
   border-radius: 10px;
   text-decoration: none;
 }
-
 .back-link a:hover {
   background-color: #e2c9ad;
   color: #654632;
 }
 
+/* =====================
+   RECEPTMÄNGD
+   ===================== */
 /* Stilsätter antalet kakor */
 .recipe-amount {
   display: inline-block;
@@ -256,15 +260,10 @@ h1, h2, h3 {
   border-radius: 5px;
 }
 
-
 /* =====================
    SIDFOT
    ===================== */
-
-/* Stilsätter sidfoten med brun bakgrund, ljus text
-   och centrerat innehåll.
-   Det AI-genererade bakgrundsmönstret läggs till genom
-   CSS och upprepas över sidfoten. */
+/* Stilsätter sidfoten med centerat innehåll. Background-image lägger till det AI-genererade bakgrundsmönstret. */
 .site-footer {
   background-color: #654632;
   background-image: url("../images/bakmonster.webp");
@@ -278,8 +277,7 @@ h1, h2, h3 {
   font-size: 1.5rem;
   margin-top: 0;
 }
-/* Visar informationen om den AI-genererade bilden
-   med mindre, kursiv text och utan nedre marginal. */
+/* Visar informationen om bakgrundsmönstret med mindre, kursiv text. */
 .image-credit {
   font-size: 0.875rem;
   font-style: italic;
