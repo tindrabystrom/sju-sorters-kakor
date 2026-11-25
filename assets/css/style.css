@@ -113,7 +113,7 @@ h1, h2, h3 {
    RECEPTMENY
    ===================== */
 
-/* Förhindrar att receptmenyn hamnar bakom sidhuvudet vid ankarlänking. */
+/* Förhindrar att receptmenyn hamnar bakom sidhuvudet vid ankarlänkning. */
 #toppen {
   scroll-margin-top: 80px;
 }
@@ -158,7 +158,7 @@ h1, h2, h3 {
    Scroll-margin-top förhindrar att recepten döljs bakom sidhuvudet vid ankarlänkning. */
 .recipes article {
   background-color: #fffdf8;
-  border: 1px solid #e5d8cc;
+  border: 2px solid #e5d8cc;
   border-radius: 10px;
   padding: 20px;
   width: 80%;
@@ -199,7 +199,7 @@ h1, h2, h3 {
   gap: 20px;
   border-top: 1px solid #e5d8cc;
 }
-/* Fördelar flexutrymmet: 40% bredd för ingredienser och 60% för instruktioner. */
+/* Fördelar flexutrymmet så att instruktionerna får mer plats än ingredienserna. */
 .recipes-ingredients {
   flex: 2;
 }
@@ -263,7 +263,7 @@ h1, h2, h3 {
 /* =====================
    SIDFOT
    ===================== */
-/* Stilsätter sidfoten med centerat innehåll. Background-image lägger till det AI-genererade bakgrundsmönstret. */
+/* Stilsätter sidfoten med centrerat innehåll. Background-image lägger till det AI-genererade bakgrundsmönstret. */
 .site-footer {
   background-color: #654632;
   background-image: url("../images/bakmonster.webp");
