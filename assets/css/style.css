@@ -133,17 +133,19 @@ h1, h2, h3 {
 #toppen {
   scroll-margin-top: 60px;
 }
-
+/* Centrerar texten och anger inre avstånd. */
 .recipe-nav {
   text-align: center;
   padding: 20px;
 }
-
+/* Anger receptmenyns rubrikstorlek och färg. */
 .recipe-nav h2 {
   font-size: 1.5rem;
   color: #493225;
 }
-
+/* Flexbox placerar länkarna på samma rad och centrerar dem
+   med 20 px mellanrum.
+   Tar bort listpunkter och listans standardindrag. */
 .navigation-links {
   display: flex;
   justify-content: center;
@@ -171,7 +173,8 @@ h1, h2, h3 {
 /* =====================
    Main styles
    ===================== */
-/* skapar en ruta runt varje recept */
+/* Skapar ett centrerat receptkort med begränsad bredd,
+   ljus bakgrund, inre avstånd och rundade hörn. */
 .recipes article {
   background-color: #fffdf8;
   border-radius: 10px;
