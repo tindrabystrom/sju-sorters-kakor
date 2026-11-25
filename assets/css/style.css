@@ -178,6 +178,7 @@ h1, h2, h3 {
    ljus bakgrund, inre avstånd och rundade hörn. */
 .recipes article {
   background-color: #fffdf8;
+  border: 1px solid #e5d8cc;
   border-radius: 10px;
   padding: 20px;
   width: 80%;
@@ -236,6 +237,10 @@ h1, h2, h3 {
 .recipes h3 {
   font-size: 1.375rem;
   color: #493225;
+}
+
+.recipes h3 i {
+  margin-right: 8px;
 }
 
 .recipes-info p, .recipes li {
