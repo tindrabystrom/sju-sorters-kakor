@@ -1,7 +1,7 @@
 /* =====================
    GRUNDLÄGGANDE STILSÄTTNING
    ===================== */
- /* Räknar in padding och border i elementens bredd och höjd. */  
+ /* Räkar in padding och border i elementens bredd och höjd. */  
 * {
   box-sizing: border-box;
 }
